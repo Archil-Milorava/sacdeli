@@ -9,74 +9,19 @@ import mainData from "./data.json" assert { type: "json" };
 const headphoneSection = document.getElementById("main-section-headphones");
 const speakersSection = document.getElementById("main-section-speakers");
 const earphonesSection = document.getElementById("main-section-earphones");
-const btn1 = document.querySelector('.headphone-btn')
+const productSection = document.getElementById("product-section");
 
-
-
-// let func1 = function () {
-//   console.log("hello");
-// }
-
-
-
-// window.addEventListener("DOMContentLoaded", function () {
-//   if (document.body.id === "speakers") {
-//     speakersProducts();
-//   } else if (document.body.id === "headphones") {
-//     headphoneProducts();
-//   } else if (document.body.id === "earphones") {
-//     earphonesProducts();
-//   } else if (document.body.id === "product-itself") {
-//  eachProduct();
-//   }
-// });
-
-
-
-
-let eachProduct = () => {
-
-  const productSection = document.getElementById("product-section");
-console.log(productSection);
-  productSection.innerHTML = mainData
-    .map((item) => {
-      return `
-
-      
-    
-    <div id="product-section" class="product-details">
-        <img
-          class="headphone1"
-          src="${item.image.desktop}"
-          alt="${item.name}"
-        />
-        <div class="headphone1-description">
-          ${item.new === true ? '<p class="title">New product</p>' : ""}
-          <h1 class="product-name">${item.name}</h1>
-          <p class="main-description">
-            ${item.description}
-          </p>
-          <p class="price" id="product-price">$ ${item.price}</p>
-          <div class="plus-minus-wrapper">
-            <div class="wrapper">
-
-            <span onclick="func1()"  class="minus">-</span>
-
-              <span  class="amount">0</span>
-
-              <span onclick="increase()"  class="plus">+</span>
-              
-            </div>
-            <button  type="button" class="btn">Add to card</button>
-          </div>
-        </div>
-      </div>
-    
-    `;
-    })
-    .join("");
-};
-
+window.addEventListener("DOMContentLoaded", function () {
+  if (document.body.id === "speakers") {
+    speakersProducts();
+  } else if (document.body.id === "headphones") {
+    headphoneProducts();
+  } else if (document.body.id === "earphones") {
+    earphonesProducts();
+  } else if (document.body.id === "product-itself") {
+    eachProduct();
+  }
+});
 
 // Headphones category
 
@@ -104,22 +49,7 @@ let headphoneProducts = () => {
       `;
     })
     .join("");
-
-
-    const buttons = document.querySelectorAll('.btn')
-
-
-console.log(buttons);
-    buttons.forEach(button => {
-      button.addEventListener('click', eachProduct)
-    })
-
 };
-
-
-
-btn1.addEventListener('mouseover', headphoneProducts)
-
 
 // Speakers category
 let speakersProducts = () => {
@@ -175,6 +105,13 @@ let earphonesProducts = () => {
 
 //Product itself
 
+// let eachProduct = () => {
+//   productSection.innerHTML = mainData
+//     .map((item) => {
+//       return ;
+//     })
+//     .join("");
+// };
 
 //PLUS-minus buttons
 
@@ -187,13 +124,12 @@ let earphonesProducts = () => {
 // });
 
 
+const button1
 
+function decrease() {
+  console.log("hello");
+}
 
-
-
-
-
-
-
-
-
+function increase() {
+  console.log("hello 2");
+}
