@@ -13,20 +13,48 @@
 
     <title>FM Challenge-by Archil Milorava</title>
     <link rel="stylesheet" href="style2.css" />
-    <script type="module" src="index.js" defer></script>
+    <link rel="stylesheet" href="style_cart.css" />
 
+    <script type="module" src="index.js" defer></script>
   </head>
 
   <body id="headphones">
+    <!-- cart -->
+    <div class="main-container-cart hidden-basket">
+      <div class="cart-header">
+        <h3 class="added-item-quantity">CART <span class="total-quantity"></span></h3>
+        <button class="clear-cart">Remove All</button>
+      </div>
+
+      <!-- prudcut added to cart -->
+
+      <div class="added-cart-items-container">
+        
+      </div>
+
+      
+
+      <!-- prudcut added to cart -->
+
+      <div class="cart-total">
+        <p class="total-added">TOTAL</p>
+        <span class="total-price"></span>
+        <button class="checkout-btn">CHECKOUT</button>
+      </div>
+    </div>
+    <!-- cart -->
+
     <header>
       <div class="navigation">
         <div class="logo"><img src="./assets/shared/desktop/logo.svg" /></div>
         <div class="nav-bar">
           <ul>
-            <li ><a href="/index.html">Home</a></li>
-            <li ><a class="headphone-btn" href="/headphones.html">Headphones</a></li>
-            <li ><a href="/speakers.html">Speakers</a></li>
-              <li ><a href="/earphones.html">Earphones</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li>
+              <a class="headphone-btn" href="/headphones.html">Headphones</a>
+            </li>
+            <li><a href="/speakers.html">Speakers</a></li>
+            <li><a href="/earphones.html">Earphones</a></li>
           </ul>
         </div>
         <div class="cart">
@@ -36,9 +64,11 @@
       <h1 class="headphones-title">Headphones</h1>
     </header>
 
-
-<!-- items -->
-    <section id="main-section-headphones" class="main-section-headphones">
+    <!-- items -->
+    <section
+      id="main-section-headphones"
+      class="main-section-headphones blur-container"
+    >
       <!-- <div id="headphone-item" class="headphones-div">
         <img
           class="headphone1"
@@ -55,63 +85,59 @@
           <button type="button" class="btn">See product</button>
         </div>
       </div> -->
-
-    
-        
     </section>
 
     <!-- categories -->
 
-  <div class="categories">
-    <div class="category">
-      <img
-        class="cat-img"
-        src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
-      />
-      <h3 class="cat-title">Headphones</h3>
-      <p class="cat-shop">Shop</p>
-      <img
-        class="arrow-img"
-        src="./assets/shared/desktop/icon-arrow-right.svg"
-      />
-    </div>
+    <div class="categories">
+      <div class="category">
+        <img
+          class="cat-img"
+          src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+        />
+        <h3 class="cat-title">Headphones</h3>
+        <p class="cat-shop">Shop</p>
+        <img
+          class="arrow-img"
+          src="./assets/shared/desktop/icon-arrow-right.svg"
+        />
+      </div>
 
-    <div class="category">
-      <img
-        class="cat-img"
-        src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
-      />
-      <h3 class="cat-title">Speakers</h3>
-      <p class="cat-shop">Shop</p>
-      <img
-        class="arrow-img"
-        src="./assets/shared/desktop/icon-arrow-right.svg"
-      />
-    </div>
+      <div class="category">
+        <img
+          class="cat-img"
+          src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+        />
+        <h3 class="cat-title">Speakers</h3>
+        <p class="cat-shop">Shop</p>
+        <img
+          class="arrow-img"
+          src="./assets/shared/desktop/icon-arrow-right.svg"
+        />
+      </div>
 
-    <div class="category">
-      <img
-        class="cat-img"
-        src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
-      />
-      <h3 class="cat-title">Earphones</h3>
-      <p class="cat-shop">Shop</p>
-      <img
-        class="arrow-img"
-        src="./assets/shared/desktop/icon-arrow-right.svg"
-      />
+      <div class="category">
+        <img
+          class="cat-img"
+          src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+        />
+        <h3 class="cat-title">Earphones</h3>
+        <p class="cat-shop">Shop</p>
+        <img
+          class="arrow-img"
+          src="./assets/shared/desktop/icon-arrow-right.svg"
+        />
+      </div>
     </div>
-  </div>
-
 
     <footer class="footer">
       <div class="nav-footer">
         <img src="./assets/shared/desktop/logo.svg" class="logo2" />
         <ul class="footer-ul">
-          <li ><a href="/index.html">Home</a></li>
-          <li ><a href="/headphones.html">Headphones</a></li>
-          <li ><a href="/speakers.html">Speakers</a></li>
-            <li ><a href="/earphones.html">Earphones</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/headphones.html">Headphones</a></li>
+          <li><a href="/speakers.html">Speakers</a></li>
+          <li><a href="/earphones.html">Earphones</a></li>
         </ul>
       </div>
 
@@ -126,14 +152,25 @@
         </p>
 
         <div class="social-icons">
-        <img src="./assets/shared/desktop/icon-facebook.svg"  class="social-icon" />
-        <img src="./assets/shared/desktop/icon-twitter.svg"  class="social-icon" />
-        <img src="./assets/shared/desktop/icon-instagram.svg"  class="social-icon" /></div>
+          <img
+            src="./assets/shared/desktop/icon-facebook.svg"
+            class="social-icon"
+          />
+          <img
+            src="./assets/shared/desktop/icon-twitter.svg"
+            class="social-icon"
+          />
+          <img
+            src="./assets/shared/desktop/icon-instagram.svg"
+            class="social-icon"
+          />
+        </div>
       </div>
 
       <div class="copyrights-div">
-        <p class="copyrights-p">Copyright 2021. All
-          Rights Reserved. Coded By Archil Milorava</p>
+        <p class="copyrights-p">
+          Copyright 2021. All Rights Reserved. Coded By Archil Milorava
+        </p>
       </div>
     </footer>
 

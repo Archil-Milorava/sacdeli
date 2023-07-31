@@ -12,10 +12,37 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_cart.css" />
 
+    <script type="module" src="index.js" defer></script>
     <title>FM Challenge-by Archil Milorava</title>
   </head>
   <body>
+   <!-- cart -->
+   <div class="main-container-cart hidden-basket">
+    <div class="cart-header">
+      <h3 class="added-item-quantity">CART <span class="total-quantity"></span></h3>
+      <button class="clear-cart">Remove All</button>
+    </div>
+
+    <!-- prudcut added to cart -->
+
+    <div class="added-cart-items-container">
+      
+    </div>
+
+    
+
+    <!-- prudcut added to cart -->
+
+    <div class="cart-total">
+      <p class="total-added">TOTAL</p>
+      <span class="total-price"></span>
+      <button class="checkout-btn">CHECKOUT</button>
+    </div>
+  </div>
+  <!-- cart -->
+
     <!-- navigation bar -->
     <header>
       <div class="navigation">
@@ -40,7 +67,9 @@
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </p>
-        <button type="button" class="btn">See product</button>
+        <button type="button" class="btn" onclick="seeProduct(4)">
+          See product
+        </button>
       </div>
     </header>
 
@@ -53,7 +82,9 @@
           src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
         />
         <h3 class="cat-title">Headphones</h3>
-        <p class="cat-shop">Shop</p>
+        <p class="cat-shop">
+          <a class="anchor" href="./headphones.html">Shop</a>
+        </p>
         <img
           class="arrow-img"
           src="./assets/shared/desktop/icon-arrow-right.svg"
@@ -66,7 +97,9 @@
           src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
         />
         <h3 class="cat-title">Speakers</h3>
-        <p class="cat-shop">Shop</p>
+        <p class="cat-shop">
+          <a class="anchor" href="./headphones.html">Shop</a>
+        </p>
         <img
           class="arrow-img"
           src="./assets/shared/desktop/icon-arrow-right.svg"
@@ -79,7 +112,9 @@
           src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
         />
         <h3 class="cat-title">Earphones</h3>
-        <p class="cat-shop">Shop</p>
+        <p class="cat-shop">
+          <a class="anchor" href="./headphones.html">Shop</a>
+        </p>
         <img
           class="arrow-img"
           src="./assets/shared/desktop/icon-arrow-right.svg"
@@ -99,13 +134,17 @@
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <button type="button" class="btn2">See product</button>
+          <button type="button" class="btn2" onclick="seeProduct(888)">
+            See product
+          </button>
         </div>
       </div>
 
       <div class="grid2">
         <h2 class="product-name2">ZX7 speaker</h2>
-        <button type="button" class="btn3">See product</button>
+        <button type="button" class="btn3" onclick="seeProduct(5)">
+          See product
+        </button>
       </div>
 
       <div class="grid3">
@@ -115,7 +154,9 @@
         />
         <div class="description-container">
           <h2 class="product-name3">YX1 earphones</h2>
-          <button type="button" class="btn4">See product</button>
+          <button type="button" class="btn4" onclick="seeProduct(1)">
+            See product
+          </button>
         </div>
       </div>
 
@@ -144,10 +185,10 @@
       <div class="nav-footer">
         <img src="./assets/shared/desktop/logo.svg" class="logo2" />
         <ul class="footer-ul">
-          <li ><a href="/index.html">Home</a></li>
-            <li ><a href="/headphones.html">Headphones</a></li>
-            <li ><a href="/speakers.html">Speakers</a></li>
-              <li ><a href="/earphones.html">Earphones</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/headphones.html">Headphones</a></li>
+          <li><a href="/speakers.html">Speakers</a></li>
+          <li><a href="/earphones.html">Earphones</a></li>
         </ul>
       </div>
 

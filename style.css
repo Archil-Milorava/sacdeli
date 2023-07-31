@@ -184,6 +184,14 @@ header {
   grid-gap: 5rem;
 }
 
+.anchor{
+  text-decoration: none;
+}
+
+.anchor:hover{
+  color: var(--orange);
+}
+
 .grid1 {
   width: 1110px;
   height: 500px;

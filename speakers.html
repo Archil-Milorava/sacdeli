@@ -13,10 +13,36 @@
 
     <title>FM Challenge-by Archil Milorava</title>
     <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style_cart.css" />
+
     <script type="module" src="index.js" defer></script>
   </head>
 
   <body id="speakers">
+  <!-- cart -->
+  <div class="main-container-cart hidden-basket">
+    <div class="cart-header">
+      <h3 class="added-item-quantity">CART <span class="total-quantity"></span></h3>
+      <button class="clear-cart">Remove All</button>
+    </div>
+
+    <!-- prudcut added to cart -->
+
+    <div class="added-cart-items-container">
+      
+    </div>
+
+    
+
+    <!-- prudcut added to cart -->
+
+    <div class="cart-total">
+      <p class="total-added">TOTAL</p>
+      <span class="total-price"></span>
+      <button class="checkout-btn">CHECKOUT</button>
+    </div>
+  </div>
+  <!-- cart -->
     <header>
       <div class="navigation">
         <div class="logo"><img src="./assets/shared/desktop/logo.svg" /></div>
@@ -35,7 +61,10 @@
       <h1 class="headphones-title" id="speakers">Speakers</h1>
     </header>
 
-    <section id="main-section-speakers" class="main-section-headphones">
+    <section
+      id="main-section-speakers"
+      class="main-section-headphones blur-container"
+    >
       <!-- <div class="speakers-div">
         <img
           class="headphone1"
@@ -53,7 +82,6 @@
           <button type="button" class="btn">See product</button>
         </div>
       </div> -->
-
     </section>
 
     <!-- categories -->
@@ -98,7 +126,7 @@
         />
       </div>
     </div>
-    
+
     <div class="grid4">
       <div class="desctiprion2">
         <h1 class="title2">
@@ -119,10 +147,10 @@
       <div class="nav-footer">
         <img src="./assets/shared/desktop/logo.svg" class="logo2" />
         <ul class="footer-ul">
-          <li ><a href="/index.html">Home</a></li>
-            <li ><a href="/headphones.html">Headphones</a></li>
-            <li ><a href="/speakers.html">Speakers</a></li>
-              <li ><a href="/earphones.html">Earphones</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/headphones.html">Headphones</a></li>
+          <li><a href="/speakers.html">Speakers</a></li>
+          <li><a href="/earphones.html">Earphones</a></li>
         </ul>
       </div>
 

@@ -13,10 +13,36 @@
 
     <title>FM Challenge-by Archil Milorava</title>
     <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="style_cart.css" />
+
     <script type="module" src="index.js" defer></script>
   </head>
 
   <body id="product-itself">
+    <!-- cart -->
+    <div class="main-container-cart hidden-basket">
+      <div class="cart-header">
+        <h3 class="added-item-quantity">CART <span class="total-quantity"></span></h3>
+        <button class="clear-cart">Remove All</button>
+      </div>
+
+      <!-- prudcut added to cart -->
+
+      <div class="added-cart-items-container">
+        
+      </div>
+
+      
+
+      <!-- prudcut added to cart -->
+
+      <div class="cart-total">
+        <p class="total-added">TOTAL</p>
+        <span class="total-price"></span>
+        <button class="checkout-btn">CHECKOUT</button>
+      </div>
+    </div>
+    <!-- cart -->
     <header>
       <div class="navigation">
         <div class="logo"><img src="./assets/shared/desktop/logo.svg" /></div>
@@ -34,38 +60,8 @@
       </div>
     </header>
 
-    <div id="product-section" class="main-container">
+    <div id="product-section" class="main-container blur-container">
       <!-- eachproduct -->
-
-      <div id="product-section" class="product-details">
-        <img
-          class="headphone1"
-          src="./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
-          alt=""
-        />
-        <div class="headphone1-description">
-          
-          <h1 class="product-name">Bla Bla</h1>
-          <p class="main-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, unde.
-          </p>
-          <p class="price" id="product-price">araferi</p>
-          <div class="plus-minus-wrapper">
-            <div class="wrapper">
-
-            <span onclick="decrease()"  class="minus">-</span>
-
-              <span  class="amount">0</span>
-
-              <span onclick=""  class="plus">+</span>
-              
-            </div>
-            <button  type="button" class="btn">blaa</button>
-          </div>
-        </div>
-      </div>
-
-dfbdfbdfbdfb
     </div>
 
     <div class="flex-container">

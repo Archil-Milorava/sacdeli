@@ -13,20 +13,45 @@
 
     <title>FM Challenge-by Archil Milorava</title>
     <link rel="stylesheet" href="style2.css" />
-    <script type="module" src="index.js" defer></script>
+    <link rel="stylesheet" href="style_cart.css" />
 
+    <script type="module" src="index.js" defer></script>
   </head>
 
   <body id="earphones">
+    <!-- cart -->
+    <div class="main-container-cart hidden-basket">
+      <div class="cart-header">
+        <h3 class="added-item-quantity">CART <span class="total-quantity"></span></h3>
+        <button class="clear-cart">Remove All</button>
+      </div>
+
+      <!-- prudcut added to cart -->
+
+      <div class="added-cart-items-container">
+        
+      </div>
+
+      
+
+      <!-- prudcut added to cart -->
+
+      <div class="cart-total">
+        <p class="total-added">TOTAL</p>
+        <span class="total-price"></span>
+        <button class="checkout-btn">CHECKOUT</button>
+      </div>
+    </div>
+    <!-- cart -->
     <header>
       <div class="navigation">
         <div class="logo"><img src="./assets/shared/desktop/logo.svg" /></div>
         <div class="nav-bar">
           <ul>
-            <li ><a href="/index.html">Home</a></li>
-            <li ><a href="/headphones.html">Headphones</a></li>
-            <li ><a href="/speakers.html">Speakers</a></li>
-              <li ><a href="/earphones.html">Earphones</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/headphones.html">Headphones</a></li>
+            <li><a href="/speakers.html">Speakers</a></li>
+            <li><a href="/earphones.html">Earphones</a></li>
           </ul>
         </div>
         <div class="cart">
@@ -36,7 +61,10 @@
       <h1 class="headphones-title" id="speakers">Earphones</h1>
     </header>
 
-    <section id="main-section-earphones" class="main-section-earphones">
+    <section
+      id="main-section-earphones"
+      class="main-section-earphones blur-container"
+    >
       <!-- <div class="earphones-div">
         <img
           class="headphone1"
@@ -99,8 +127,6 @@
       </div>
     </div>
 
-
-    
     <div class="grid4">
       <div class="desctiprion2">
         <h1 class="title2">
@@ -116,15 +142,15 @@
 
       <img src="./assets/shared/desktop/image-best-gear.jpg" class="img-best" />
     </div>
-  
+
     <footer class="footer">
       <div class="nav-footer">
         <img src="./assets/shared/desktop/logo.svg" class="logo2" />
         <ul class="footer-ul">
-          <li ><a href="/index.html">Home</a></li>
-            <li ><a href="/headphones.html">Headphones</a></li>
-            <li ><a href="/speakers.html">Speakers</a></li>
-              <li ><a href="/earphones.html">Earphones</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/headphones.html">Headphones</a></li>
+          <li><a href="/speakers.html">Speakers</a></li>
+          <li><a href="/earphones.html">Earphones</a></li>
         </ul>
       </div>
 
