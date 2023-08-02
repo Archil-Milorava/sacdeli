@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&family=Fraunces:wght@100&family=Manrope&display=swap");
+  
+  /* 
+      font-family: 'Manrope', sans-serif; */
+  
+  :root {
+    /* colors */
+    --orange: #d87d4a;
+    --black: #101010;
+    --black-2: #000000;
+    --light-orange: #fbaf85;
+    --white: #ffffff;
+    --light-gray: rgb(124, 124, 124);
+    --light-white-2: #fafafa;
+  }
+  
+  body {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .header2 {
+  height: 96px;
+  background-color: var(--black-2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+  .navigation-checkout {
+  width: 1111px;
+  height: 96px;
+  border-bottom: 0.5px solid var(--light-gray);
+  display: grid;
+  grid-template-columns: 270px 586px 250px;
+  align-items: center;
+}
+
+
+.grid-container-one{
+    display: grid;
+    width: 730px;
+    height: 250px;
+    padding: 2rem;
+    background-color: lime;
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(2, 1fr);
+gap: 1rem;
+}
+
+

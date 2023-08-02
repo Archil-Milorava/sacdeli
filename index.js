@@ -89,21 +89,20 @@ let earphonesProducts = () => {
   earphonesSection.innerHTML = mainData
     .filter((item) => item.category === "earphones")
     .map((item) => {
-      let { name, image, id } = item;
-      return `
-      <div class="speakers-div" id="${id}">
+      let { id, name, image, description } = item;
+      return `<div id="${id}" class="speakers-div">
       <img
         class="headphone1"
         src="${image.desktop}"
-        alt=""
+        alt="${name}"
       />
       <div class="headphone1-description">
-      ${item.new === true ? '<p class="title">New product</p>' : ""}
-        <h1 class="product-name">${name}</h1>
+        ${item.new === true ? '<p class="title">New product</p>' : ""}
+        <h1 class="product-name"> ${name}</h1>
         <p class="main-description">
-        ${item.description}
+          ${description}
         </p>
-        <button type="button" class="btn" onclick="cartItems(${id})">See product</button>
+        <button type="button" class="btn" onclick="seeProduct(${id})">See product</button>
       </div>
     </div>
     
@@ -283,16 +282,11 @@ clearBasketButton.addEventListener("click", () => {
 const totalPrice = document.querySelector(".total-price");
 
 function totalPriceCalculator() {
-  // let priceOfTtem = basket.map((x) => x.price);
-  // let quantityOfItem = basket.map((x) => x.quantity);
-
-  // const total = priceOfTtem * quantityOfItem;
-
-  // return (totalPrice.textContent = total);
-
-  let total = basket.reduce((acc, cur) => (acc = cur.quantity * cur.price), 0);
-  totalPrice.textContent = total;
-  console.log(total);
+  const total = basket.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
+  totalPrice.textContent = `$ ${total.toFixed(2)}`;
 }
 
 //Calculating the quantity of the basket items

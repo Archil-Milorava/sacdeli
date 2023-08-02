@@ -7,35 +7,99 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-  <title>Frontend Mentor | Audiophile e-commerce website</title>
+    <script type="module" src="index.js" defer></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="checkout.css" />
+
+    <title>FM Challenge-by Archil Milorava</title>
 </head>
 
 <body>
-  Home
-  Headphones
-  Speakers
-  Earphones
 
-  
-  <!-- Cart Modal -->
-  Cart(3)
-  Remove All
+  <header class="header2">
+    <div class="navigation-checkout">
+      <div class="logo"><img src="./assets/shared/desktop/logo.svg" /></div>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/headphones.html">Headphones</a></li>
+          <li><a href="/speakers.html">Speakers</a></li>
+          <li><a href="/earphones.html">Earphones</a></li>
+        </ul>
+      </div>
+      <div class="cart">
+        <img id="cart-icon" src="./assets/shared/desktop/icon-cart.svg" />
+      </div>
+    </div>
+  </header>
 
-  XX99 MK II x1
-  $2,999
-  
-  XX59 x2
-  $899
-  
-  YX1 x1
-  $599
-  
-  Total $5,396
+<h6>BILLING DETAILS</h6>
+<div class="grid-container-one">
+  <div class="input_field name">
+<label class="label_checkout" for="name">Name</label>
+<input class="input_checkout" id="name" type="text" placeholder="Archil Milorava">
+</div>
 
-  Checkout
-  <!-- Cart modal end -->
+<div class="input_field email">
+  <label class="label_checkout" for="email">Email Address</label>
+  <input class="input_checkout" id="email" type="email" placeholder="achimilorava16@gmail.com">
+  </div>
 
-  
+  <div class="input_field phone">
+    <label class="label_checkout" for="phone_number">Phone Number</label>
+    <input class="input_checkout" id="phone_number" type="tel" placeholder="+995 595 096692">
+    </div>
+
+</div>
+<h6>SHIPPING INFO</h6>
+<div class="grid-container-one">
+  <div class="input_field address">
+<label class="label_checkout" for="address">Address</label>
+<input class="input_checkout" id="address" type="text" placeholder="Williams Av.">
+</div>
+
+<div class="input_field zip">
+  <label class="label_checkout" for="zip">ZIP code</label>
+  <input class="input_checkout" id="zip" type="number" placeholder="10001">
+  </div>
+
+  <div class="input_field city">
+    <label class="label_checkout" for="city">City</label>
+    <input class="input_checkout" id="city" type="text" placeholder="Tbilisi">
+    </div>
+
+  <div class="input_field country">
+    <label class="label_checkout" for="country">Country</label>
+    <input class="input_checkout" id="country" type="text" placeholder="Georgia">
+    </div>
+
+</div>
+
+<h6>PAYMENT DETAILS</h6>
+<div class="grid-container-one">
+  <label for="payment"> Payment Method</label>
+  <input name="radio" type="radio" id="payment1" class="payment-radio" >
+  <label for="payment2"> Payment Method</label>
+
+  <input name="radio" type="radio" id="payment2" class="payment-radio" >
+
+</div>
+
+
+
+
+<div class="input_field email">
+  <label class="label_checkout" for="email">Email Address</label>
+  <input class="input_checkout" id="email" type="email" placeholder="achimilorava16@gmail.com">
+  </div>
+
+  <div class="input_field name">
+    <label class="label_checkout" for="phone_number">Phone Number</label>
+    <input class="input_checkout" id="phone_number" type="tel" placeholder="+995 595 096692">
+    </div>
+
+</div>
+<!-- 
   Go back
 
   Checkout
@@ -104,7 +168,7 @@
   and sound specialists who are devoted to helping you get the most out of personal audio. Come and
   visit our demo facility - we’re open 7 days a week.
 
-  Copyright 2021. All Rights Reserved
+  Copyright 2021. All Rights Reserved -->
 </body>
 
 </html>

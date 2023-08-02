@@ -57,7 +57,7 @@ header {
   cursor: pointer;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li a {
   text-decoration: none;
   color: var(--white);
 }
@@ -79,7 +79,6 @@ header {
   letter-spacing: 0.2rem;
   font-weight: lighter;
 }
-
 
 .categories {
   height: 284px;
@@ -128,7 +127,6 @@ header {
 .cat-shop:hover {
   color: var(--orange);
 }
-
 
 .grid4 {
   margin-left: 5rem;
@@ -204,7 +202,7 @@ header {
   margin-bottom: 6rem;
 }
 
-.speakers-div{
+.speakers-div {
   display: flex;
   margin-bottom: 6rem;
 }
@@ -246,7 +244,7 @@ header {
   color: var(--light-gray);
 }
 .btn {
-  margin-top: 1rem;
+  margin-top: rem;
   width: 10rem;
   height: 3rem;
   background-color: var(--orange);
@@ -294,7 +292,7 @@ header {
   cursor: pointer;
 }
 
-.footer-ul li a{
+.footer-ul li a {
   text-decoration: none;
   color: white;
 }
