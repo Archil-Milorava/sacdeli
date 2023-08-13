@@ -295,3 +295,9 @@ function totalQuantityCalculator() {
   let totalQt = basket.map((x) => x.quantity);
   return (totalquantity.textContent = totalQt);
 }
+
+let checkoutButton = document.querySelector(".checkout-btn");
+
+checkoutButton.addEventListener("click", () => {
+  window.location.href = "checkout.html";
+});

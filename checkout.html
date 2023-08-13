@@ -1,174 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
-    <script type="module" src="index.js" defer></script>
+    <script type="module" src="checkout.js" defer></script>
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="checkout.css" />
 
-    <title>FM Challenge-by Archil Milorava</title>
-</head>
+    <title>Check out</title>
+  </head>
 
-<body>
+  <body id="checkout">
+    <header class="header2">
+      <div class="navigation-checkout">
+        <div class="logo"><img src="./assets/shared/desktop/logo.svg" /></div>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/headphones.html">Headphones</a></li>
+            <li><a href="/speakers.html">Speakers</a></li>
+            <li><a href="/earphones.html">Earphones</a></li>
+          </ul>
+        </div>
+        <div class="cart"></div>
+      </div>
+    </header>
 
-  <header class="header2">
-    <div class="navigation-checkout">
-      <div class="logo"><img src="./assets/shared/desktop/logo.svg" /></div>
-      <div class="nav-bar">
-        <ul>
+    <div class="main-container">
+      <form action="/" id="form">
+        <h1 class="checkout-h1">CHECKOUT</h1>
+
+        <div class="billing-details small-div">
+          <div class="input-basic">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Archil Milorava"
+            />
+          </div>
+          <div class="input-basic">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="achimilorava16@gmail.com"
+            />
+          </div>
+          <div class="input-basic">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+995 595 09 66 92"
+            />
+          </div>
+        </div>
+
+        <div class="shipping-info small-div">
+          <div class="input-basic address">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Tbilisi"
+            />
+          </div>
+          <div class="input-basic zip">
+            <label for="zip">ZIP code</label>
+            <input type="number" name="zip" id="zip" placeholder="1235" />
+          </div>
+          <div class="input-basic city">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="Tbilsii" />
+          </div>
+          <div class="input-basic country">
+            <label for="country">Country</label>
+            <input
+              type="text"
+              name="country"
+              id="country"
+              placeholder="Georgia"
+            />
+          </div>
+        </div>
+
+        <div class="payment-methods small-div">
+          <div class="choice">
+            <span>Payment methods</span>
+            <div class="choices">
+              <div class="choice1">
+                <input type="radio" name="radio" value="emoney" />
+
+                <label for="radio">e-money </label>
+              </div>
+              <div class="choice1">
+                <input type="radio" name="radio" value="cash" />
+
+                <label for="radio">cash on delivery </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-basic el-money">
+            <label for="el-money">e-Money number</label>
+            <input
+              type="text"
+              name="el-money"
+              id="el-money"
+              placeholder="126518655"
+            />
+          </div>
+
+          <div class="input-basic pin">
+            <label for="pin">e-Money PIN</label>
+            <input type="text" name="pin" id="pin" placeholder="6254" />
+          </div>
+        </div>
+      </form>
+
+      <div class="basket-container" id="summery-basket">
+        <h3>SUMMARY</h3>
+        <div class="item-container"></div>
+
+        <div class="total-calc">
+          <div class="total-price-container same">
+            <h3 class="cacl-h3">TOTAL</h3>
+            <h3 class="total-price">$ 5625</h3>
+          </div>
+          <div class="total-shipping-container same">
+            <h3 class="cacl-h3">SHIPPING</h3>
+            <h3 class="total-price">$ 55</h3>
+          </div>
+          <div class="total-vat-container same">
+            <h3 class="cacl-h3">VAT (INCLUDED)</h3>
+            <h3 class="total-price">$ 165</h3>
+          </div>
+          <div class="grand-total-price-container same">
+            <h3 class="cacl-h3">GRAND TOTAL</h3>
+            <h3 class="grand-total-price">$ 5625</h3>
+          </div>
+        </div>
+        <button type="button" class="checkout-btn">CONTUNUE & PAY</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="nav-footer">
+        <img src="./assets/shared/desktop/logo.svg" class="logo2" />
+        <ul class="footer-ul">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/headphones.html">Headphones</a></li>
           <li><a href="/speakers.html">Speakers</a></li>
           <li><a href="/earphones.html">Earphones</a></li>
         </ul>
       </div>
-      <div class="cart">
-        <img id="cart-icon" src="./assets/shared/desktop/icon-cart.svg" />
+
+      <div class="social-media">
+        <p class="big-description">
+          Audiophile the best place to buy your portable audio equipment. Home
+          Headphones Speakers Earphones Audiophile is an all in one stop to
+          fulfill your audio needs. We're a small team of music lovers and sound
+          specialists who are devoted to helping you get the most out of
+          personal audio. Come and visit our demo facility - we’re open 7 days a
+          week.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/achi.barsa" target="_blank">
+            <img
+              src="./assets/shared/desktop/icon-facebook.svg"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://www.twitter.com/your-twitter-profile-link"
+            target="_blank"
+          >
+            <img
+              src="./assets/shared/desktop/icon-twitter.svg"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/your-instagram-profile-link"
+            target="_blank"
+          >
+            <img
+              src="./assets/shared/desktop/icon-instagram.svg"
+              class="social-icon"
+            />
+          </a>
+        </div>
       </div>
-    </div>
-  </header>
 
-<h6>BILLING DETAILS</h6>
-<div class="grid-container-one">
-  <div class="input_field name">
-<label class="label_checkout" for="name">Name</label>
-<input class="input_checkout" id="name" type="text" placeholder="Archil Milorava">
-</div>
-
-<div class="input_field email">
-  <label class="label_checkout" for="email">Email Address</label>
-  <input class="input_checkout" id="email" type="email" placeholder="achimilorava16@gmail.com">
-  </div>
-
-  <div class="input_field phone">
-    <label class="label_checkout" for="phone_number">Phone Number</label>
-    <input class="input_checkout" id="phone_number" type="tel" placeholder="+995 595 096692">
-    </div>
-
-</div>
-<h6>SHIPPING INFO</h6>
-<div class="grid-container-one">
-  <div class="input_field address">
-<label class="label_checkout" for="address">Address</label>
-<input class="input_checkout" id="address" type="text" placeholder="Williams Av.">
-</div>
-
-<div class="input_field zip">
-  <label class="label_checkout" for="zip">ZIP code</label>
-  <input class="input_checkout" id="zip" type="number" placeholder="10001">
-  </div>
-
-  <div class="input_field city">
-    <label class="label_checkout" for="city">City</label>
-    <input class="input_checkout" id="city" type="text" placeholder="Tbilisi">
-    </div>
-
-  <div class="input_field country">
-    <label class="label_checkout" for="country">Country</label>
-    <input class="input_checkout" id="country" type="text" placeholder="Georgia">
-    </div>
-
-</div>
-
-<h6>PAYMENT DETAILS</h6>
-<div class="grid-container-one">
-  <label for="payment"> Payment Method</label>
-  <input name="radio" type="radio" id="payment1" class="payment-radio" >
-  <label for="payment2"> Payment Method</label>
-
-  <input name="radio" type="radio" id="payment2" class="payment-radio" >
-
-</div>
-
-
-
-
-<div class="input_field email">
-  <label class="label_checkout" for="email">Email Address</label>
-  <input class="input_checkout" id="email" type="email" placeholder="achimilorava16@gmail.com">
-  </div>
-
-  <div class="input_field name">
-    <label class="label_checkout" for="phone_number">Phone Number</label>
-    <input class="input_checkout" id="phone_number" type="tel" placeholder="+995 595 096692">
-    </div>
-
-</div>
-<!-- 
-  Go back
-
-  Checkout
-
-  Billing details
-  Name
-  Email address
-  Phone number
-
-  Shipping info
-  Address
-  ZIP code
-  City
-  Country
-
-  Payment details
-  Payment method
-  e-Money
-  Cash on delivery
-  e-Money number
-  e-money PIN
-
-  The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives 
-  at your residence. Just make sure your address is correct so that your order will not be cancelled.
-
-  Summary
-  XX99 MK II x1
-  $2,999
-
-  XX59 x2
-  $899
-
-  YX1 x1
-  $599
-
-  Total $5,396
-  Shipping $10
-  VAT $120
-
-  Grand total $5,526
-
-  Continue & pay
-
-
-  <!-- Success Modal -->
-  Thank you for your order
-  You will receive an email confirmation shortly.
-
-  XX99 MK II x 1
-  $2,999
-  and 2 other item(s)
-
-  Grand total
-  $5,526
-
-  Back to home
-  <!-- End success modal -->
-
-
-  Home
-  Headphones
-  Speakers
-  Earphones
-
-  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
-  and sound specialists who are devoted to helping you get the most out of personal audio. Come and
-  visit our demo facility - we’re open 7 days a week.
-
-  Copyright 2021. All Rights Reserved -->
-</body>
-
+      <div class="copyrights-div">
+        <p class="copyrights-p">
+          Copyright 2021. All Rights Reserved. Coded By Archil Milorava
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
